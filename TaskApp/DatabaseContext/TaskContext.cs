@@ -10,7 +10,7 @@ namespace TaskApp.DatabaseContext
             
         }
         
-        public DbSet<Models.Task> Tasks { get; set; }
+        public DbSet<Models.MyTask> Tasks { get; set; }
         public DbSet<Category> Categories { get; set; }
     }
 }

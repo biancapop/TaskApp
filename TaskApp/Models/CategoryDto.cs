@@ -1,16 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace TaskApp.Models
-
 {
-    public class Category
+    public class CategoryDto
     {
-        [Key]
-        public int Id { get; set; }
+        [Required]
         public string Name { get; set; } = "";
+        [Required]
         public string Abbreviation { get; set; } = "";
+        [Required]
         public string Color { get; set; } = "";
-        public ICollection<MyTask>? Tasks{ get; set; } = new List<MyTask>();
-
     }
 }
